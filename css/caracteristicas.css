@@ -1,8 +1,10 @@
 .caracteristicasPrincipales{
+	position: relative;
 	justify-content: space-around;
 	
 }
 .itemCaracteristica{
+	position: relative;
 	width: 30%;
 	height:250px; 
 	border: var(--border);
@@ -31,6 +33,7 @@ main{
 	border-bottom: 4px solid var(--color4);
 }
 .colec{
+	position: relative;
 	justify-content: space-around;
 
 
@@ -70,3 +73,26 @@ main{
 	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6418942577030813) 51%, rgba(255,255,255,0) 100%);
 	padding: 3px 10px;
 }
+
+@media (max-width: 480px){
+	.itemCaracteristica{
+		position: relative;
+
+		
+		width: 100%;
+	}
+	.itemCaracteristica>.row{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	
+	.colection{
+		position: relative;
+		min-width: 100%;
+		margin-top: 50px;
+	}
+	
+}
+
