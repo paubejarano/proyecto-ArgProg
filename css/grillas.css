@@ -1,6 +1,6 @@
 :root{
-	/*--border: 1px solid red;
-	--fondoF: #9DDB89FF;
+	/*--border: 1px solid red;*/
+	/*--fondoF: #9DDB89FF;
 	--fondoC: #DADC74FF;*/
 	--color1: #000000;
 	--color2:#14213d;
@@ -85,6 +85,9 @@ section{
 	margin-top: 100px;
 	
 	border: var(--border);
+}
+.anchoCompleto{
+	width: 100% !important;
 }
 
 /* MEDIA QUERY */
