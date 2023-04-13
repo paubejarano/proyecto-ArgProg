@@ -1,0 +1,98 @@
+#destacados{
+	background: linear-gradient(90deg, rgba(0,0,0,0.3) -50%,white 40%,white 65%,rgba(0,0,0,0.3) 150%);
+}
+
+.prodContent{
+	
+	transition: all .3s ease;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 400px;
+	gap:52px;
+}
+
+#over{
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	border-left: 3px solid var(--color3);
+	border-right: 3px solid var(--color3);
+}
+
+.producto{
+
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid var(--color4);
+	background-color: white;
+	height: 100%;
+	width: 30%;
+	min-width: 30%;
+	border-radius: 1rem;
+	
+}
+.imgProd{
+	position: relative;
+	
+	height: 70%;
+	width: 99.5%;
+	overflow: hidden;
+}
+.imgProd>img{
+	position: relative;
+	width: 100%;
+}
+.titleCentrado{
+	text-align: center;
+}
+.descProd{
+	position: relative;
+	width: 99.5%;
+}
+.descProd>h3,h2{
+	text-align: center;
+}
+
+.controlDestacados{
+	justify-content: center;
+	gap:50px;
+}
+.controlDestacados>.izq{
+	background-image: url(../source/321-arrow-left2.png);
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	transition: all .3s ease;
+}
+.controlDestacados>.der{
+	background-image: url(../source/317-arrow-right2.png);
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	transition: all .3s ease;
+}
+
+.izq:hover{
+	cursor: pointer;
+	background-color: var(--color3);
+}
+.der:hover{
+	cursor: pointer;
+	background-color: var(--color3);
+}
+
+@media (max-width: 480px){
+	.producto{
+		width: 90%;
+		min-width: 90%;
+	}
+	.controlDestacados{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
