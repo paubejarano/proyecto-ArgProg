@@ -1,5 +1,7 @@
 :root{
-	--border: 1px solid red;
+	/*--border: 1px solid red;
+	--fondoF: #9DDB89FF;
+	--fondoC: #DADC74FF;*/
 	--color1: #000000;
 	--color2:#14213d;
 	--color3: #fca311;
@@ -9,6 +11,7 @@
 	--iconSize2: 100px;
 	--altoSection: 450px;
 	--fuentePrimary:'Rubik', sans-serif;
+	
 }
 *{
 	font-family: var(--fuentePrimary);
@@ -30,6 +33,7 @@ body{
 	flex-direction: row;
 	justify-content: space-between;
 	border: var(--border);
+	background-color: var(--fondoF)
 
 }
 .c1{
@@ -41,6 +45,7 @@ body{
 	border: var(--border);
 	margin-top: 5px;
 	margin-bottom: 5px;
+	background-color: var(--fondoC);
 }
 .c2{
 	position: relative;
@@ -51,6 +56,7 @@ body{
 	border: var(--border);
 	margin-top: 5px;
 	margin-bottom: 5px;
+	background-color: var(--fondoC);
 }
 .c3{
 	
@@ -62,6 +68,7 @@ body{
 	border: var(--border);
 	margin-top: 5px;
 	margin-bottom: 5px;
+	background-color: var(--fondoC);
 }
 .c4{
 	position: relative;
@@ -72,6 +79,7 @@ body{
 	border: var(--border);
 	margin-top: 5px;
 	margin-bottom: 5px;
+	background-color: var(--fondoC);
 }
 section{
 	margin-top: 100px;
