@@ -13,12 +13,12 @@
 	position: relative;
 	width: 70px;
 }
-.itemCaracteristica>.row{
+.itemCaracteristica>.row1{
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
 }
-.itemCaracteristica>.row>h3 {
+.itemCaracteristica>.row1>h3 {
 	margin-left: 30px;
 }
 main{
