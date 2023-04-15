@@ -139,6 +139,9 @@ section{
 	text-decoration: none;
 	color: var(--color4);
 }
+ .tCentrado{
+ 	text-align: center;
+ }
 
 /* MEDIA QUERY */
 @media (max-width: 1400px) and (min-width: 1121px){

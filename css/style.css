@@ -10,3 +10,10 @@
     object-fit: cover;
     border-radius: 30px;
   }
+
+
+ main section:nth-child(1){
+ 	margin-top: 50px;
+ }
+
+ 
