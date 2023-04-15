@@ -1,98 +1,93 @@
+.visorSlider{
+	position: relative;
+	overflow: hidden;
+}
 #destacados{
-	background: linear-gradient(90deg, rgba(0,0,0,0.3) -50%,white 40%,white 65%,rgba(0,0,0,0.3) 150%);
+	background-color: var(--color3);
 }
 
-.prodContent{
-	
-	transition: all .3s ease;
-	
+#destacados>div>div>div h1{
+	text-align: center;
+	font-size: 40px;
+}
+
+.sliderContent{
+	position: relative;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	height: 400px;
-	gap:52px;
+	gap: 57px;
+	transition: all .3s ease;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
-
-#over{
+.slide{
 	overflow: hidden;
-	width: 100%;
-	height: auto;
-	border-left: 3px solid var(--color3);
-	border-right: 3px solid var(--color3);
-}
-
-.producto{
-
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	overflow: hidden;
-	border: 2px solid var(--color4);
-	background-color: white;
-	height: 100%;
 	width: 30%;
 	min-width: 30%;
+	height: 100%;
+	border: 2px solid var(--color4);
 	border-radius: 1rem;
+	background-color: white;
+	box-shadow: 1px 1px 10px black;
 	
 }
-.imgProd{
-	position: relative;
-	
+.slide:hover{
+	cursor: pointer;
+}
+
+.imgDest{
 	height: 70%;
-	width: 99.5%;
-	overflow: hidden;
+	background-size: cover;
 }
-.imgProd>img{
-	position: relative;
+.decDest{
+	height: 30%;
+}
+
+.decDest>div>h3,.decDest>div>h2{
 	width: 100%;
-}
-.titleCentrado{
-	text-align: center;
-}
-.descProd{
-	position: relative;
-	width: 99.5%;
-}
-.descProd>h3,h2{
 	text-align: center;
 }
 
-.controlDestacados{
+.controlSlider{
+	display: flex;
+	flex-direction: row;
 	justify-content: center;
-	gap:50px;
+	gap:100px;
 }
-.controlDestacados>.izq{
+#ctrlIzq{
+	width: 34px;
+	aspect-ratio: 1/1;
 	background-image: url(../source/321-arrow-left2.png);
-	width: 34px;
-	height: 34px;
-	border-radius: 50%;
-	transition: all .3s ease;
+	background-size: cover;
 }
-.controlDestacados>.der{
+#ctrlDer{
+	width: 34px;
+	aspect-ratio: 1/1;
 	background-image: url(../source/317-arrow-right2.png);
-	width: 34px;
-	height: 34px;
-	border-radius: 50%;
-	transition: all .3s ease;
+	background-size: cover;
 }
 
-.izq:hover{
-	cursor: pointer;
-	background-color: var(--color3);
-}
-.der:hover{
-	cursor: pointer;
-	background-color: var(--color3);
+.controlSlider>div:focus{
+	background-color: var(--color4);
 }
 
-@media (max-width: 480px){
-	.producto{
-		width: 90%;
-		min-width: 90%;
+@media (max-width: 820px){
+	.slide{
+		min-width: 46%;
+		border: 1px solid var(--color4);
 	}
-	.controlDestacados{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
+	#destacados{
+		background-color: var(--color3);
+	}
+
+}
+@media (max-width: 480px){
+	.slide{
+		min-width: 100%;
+		border: 1px solid var(--color4);
+	}
+	#destacados{
+		background-color: var(--color3);
 	}
 }

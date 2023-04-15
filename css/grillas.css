@@ -31,6 +31,7 @@ body{
 .row1{
 	display: flex;
 	width: 99.2%;
+	height: auto;
 	flex-direction: row;
 	justify-content: space-between;
 	border: var(--border);
@@ -84,11 +85,59 @@ body{
 }
 section{
 	margin-top: 100px;
-	
+	padding-top: 25px;
+	padding-bottom: 25px;
 	border: var(--border);
 }
 .anchoCompleto{
 	width: 100% !important;
+}
+.altoCompleto{
+	position: relative;
+	height: 100%;
+}
+.alto1-2{
+	position: relative;
+	height: 50%;
+}
+.ancho1-2{
+	position: relative;
+	width: 50%;
+}
+.alto1-4{
+	position: relative;
+	height: 25%;
+}
+.ancho1-4{
+	position: relative;
+	width: 25%;
+}
+.alto3-4{
+	position: relative;
+	height: 75%;
+}
+.ancho3-4{
+	position: relative;
+	width: 75%;
+}
+.sinPadding{
+	padding: 0;
+}
+
+.boton{
+	border-radius: 5px;
+	padding: 5px 10px;
+	border: 1px solid var(--color4);
+	background-color: var(--color3);
+	color:white;
+	text-decoration: none;
+}
+.botonGhost{
+	border-radius: 5px;
+	padding: 3px 5px;
+	border: 1px solid var(--color4);
+	text-decoration: none;
+	color: var(--color4);
 }
 
 /* MEDIA QUERY */
@@ -107,8 +156,11 @@ section{
 	.c1,.c2{
 		min-width: 46.8%;
 	}
-	.c3,.c4{
+	.c3{
 		min-width: 97%;
+	}
+	.c4{
+		min-width: 100%;
 	}
   
 }
@@ -139,9 +191,20 @@ section{
    	.row1{
    		display: block;
    	}
-    .c1,.c2,.c3,.c4{
+    .c1,.c2,.c3{
     	position: relative;
-    	min-width: 93.5%;
+    	min-width: 100%;
+    	padding: 0;
+    }
+    .c4{
+    	position: relative;
+    	min-width: 100%;
+    	padding: 0;
+    }
+    section{
+    	margin-top: 25px;
+    	padding-top:10px;
+    	padding-bottom: 10px;
     }
 
 }

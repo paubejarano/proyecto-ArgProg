@@ -1,98 +1,48 @@
-.caracteristicasPrincipales{
+.iconCaracteristica{
 	position: relative;
-	justify-content: space-around;
-	
-}
-.itemCaracteristica{
-	position: relative;
-	width: 30%;
-	height:250px; 
-	border: var(--border);
-}
-.itemCaracteristica>div>img{
-	position: relative;
-	width: 70px;
-}
-.itemCaracteristica>.row1{
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-}
-.itemCaracteristica>.row1>h3 {
-	margin-left: 30px;
-}
-main{
-	margin-top: 60px;
-}
-.textCaracteristica{
-	flex-direction: column !important;
-	justify-content: flex-start;
-}
-
-#caracteristicas{
-	border-bottom: 4px solid var(--color4);
-}
-.colec{
-	position: relative;
-	justify-content: space-around;
-
-
-}
-.colec>.colection{
-	position: relative;
-	width: 30%;
-	height: 500px;
-	border: var(--border);
-	overflow: hidden;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	border:2px solid var(--color4);
-	border-radius: 1rem;
-}
-.colection>img{
-	height: 100%;
-	transition: all .5s ease;
-}
-.colection>h3{
-	margin-top: -100px;
-	color:white;
-	transition:all .3s ease;
-}
-
-.colection:hover > img{
-	height: 120%;
-}
-.colection:hover > h3{
-	text-align: center;
-	margin-top: -150%;
-	font-size: 30px;
 	width: 100%;
-	height: 100%;
-	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6418942577030813) 51%, rgba(255,255,255,0) 100%);
-	padding: 3px 10px;
+}
+#caracteristicas{
+	height: auto;
+	background-color: var(--color4);
+}
+
+
+
+@media (max-width: 820px){
+	#caracteristicas>div>.row1{		
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.iconContent{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.iconContent>img{
+		width: 40%;
+		
+	}
+	#caracteristicas>div>div h3{
+		text-align: center;
+	}
+	#caracteristicas>div>div p{
+		text-align: center;
+	}
 }
 
 @media (max-width: 480px){
-	.itemCaracteristica{
-		position: relative;
-
+	.iconCaracteristica{
+		width: 20%;
 		
-		width: 100%;
 	}
-	.itemCaracteristica>.row{
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		align-items: center;
+	#caracteristicas>div>div h3{
+		text-align: center;
 	}
-	
-	.colection{
-		position: relative;
-		min-width: 100%;
-		margin-top: 50px;
+	#caracteristicas>div>div p{
+		text-align: center;
 	}
-	
 }
-

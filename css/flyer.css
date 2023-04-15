@@ -1,0 +1,26 @@
+#flyerPrincipal{
+	position: relative;
+	height: auto;
+	background-color: var(--color1);
+
+
+}
+.imgFlyer>img{
+	width: 100%;
+}
+
+.textFlyer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.textFlyer>h1{
+	font-size: 32px;
+	color: var(--color3);
+}
+.textFlyer>p{
+	font-size: 20px;
+	color: white;
+	letter-spacing: 1px;
+}
