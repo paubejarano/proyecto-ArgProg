@@ -41,6 +41,9 @@
 	background-size: content;
 	background-repeat: no-repeat;
 }
+#selectorDeColor{
+	overflow-y: auto;
+}
 #estampados{
 	height: 300px;
 	gap: 1%;
@@ -67,4 +70,14 @@
 }
 #resultado>.est{
 	border:none;
+}
+
+@media (max-width: 820px){
+	#selectorDeColor{
+		height: 300px;
+	}
+}
+
+@media (max-width: 480px){
+
 }
